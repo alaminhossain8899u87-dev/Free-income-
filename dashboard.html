@@ -4,7 +4,11 @@
     <title>Dashboard</title>
 </head>
 <body>
-
+<script>
+if(localStorage.getItem("user") === null){
+    window.location.href = "login.html";
+}
+</script>
 <h2>Welcome to Dashboard 🎉</h2>
 <p>You are successfully logged in.</p>
 
