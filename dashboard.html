@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
+<title>Dashboard</title>
 </head>
 <body>
+
 <script>
-if(localStorage.getItem("user") === null){
+if(localStorage.getItem("user") === null) {
     window.location.href = "login.html";
 }
 </script>
+
 <h2>Welcome to Dashboard 🎉</h2>
 <p>You are successfully logged in.</p>
 
@@ -18,9 +20,9 @@ if(localStorage.getItem("user") === null){
 function logout() {
     alert("Logged Out!");
     localStorage.removeItem("user");
-window.location.href = "login.html";
+    window.location.href = "login.html";
 }
 </script>
 
 </body>
-</html>
+</html
