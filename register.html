@@ -39,6 +39,30 @@ width:100%;
 <input type="password" placeholder="Password"><br>
 <button>Register</button>
 </div>
+</div>
+
+<script>
+document.querySelector("button")?.addEventListener("click", function(){
+
+    let name = document.querySelector("input[type='text']")?.value;
+    let email = document.querySelector("input[type='email']")?.value;
+    let password = document.querySelector("input[type='password']")?.value;
+
+    if(name && email && password){
+        localStorage.setItem("userName", name);
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userPassword", password);
+
+        alert("Registration Successful!");
+        window.location.href = "login.html";
+    } else {
+        alert("Please fill all fields!");
+    }
+
+});
+</script>
 
 </body>
-  </html>
+</html>
+
+  
